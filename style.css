@@ -19,11 +19,14 @@ font-family: 'Wallpoet', cursive;
     animation-name: bounce;
     animation-duration: 17s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
   }
 
   #white  {
    
     animation-timing-function: ease-in;
+    animation-direction: alternate;
   }
 
   @keyframes bounce {
@@ -166,9 +169,28 @@ background-color: red;
     margin: 8px;
     padding: 10px;
     font-size: 40px;  
-    background-color:rgb(191, 255, 0); 
+    background-color:rgb(251, 0, 255); 
     border: 1pc;
     justify-content: center;
   }
   
-  
+  .mission{
+    font-size: 50px;
+    padding-top: 10%;
+    max-width: 1200px;
+    padding-left: 10%;
+    text-align: center;
+  }
+  .stuff{
+    font-size: 30px;
+    padding-top: 0%;
+    max-width: 10px;
+    padding-right: 90%;
+    text-align: left;
+
+
+  }
+
+  .u{
+    font-size: 30px;
+  }
