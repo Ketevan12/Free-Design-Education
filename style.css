@@ -50,12 +50,16 @@ font-family: 'Wallpoet', cursive;
     top: 152px; background-color: Blue;
 
   }
-  100% {
+  90% {
     top: 152px; 
     
-    background-color:purple;
+    background-color:pink;
 }    
- 
+100% {
+    top: 152px; 
+
+background-color: red;
+}
 }
   
 
@@ -69,15 +73,21 @@ font-family: 'Wallpoet', cursive;
   
   }
   #scroll-text {
+    background: -webkit-linear-gradient(#e128ff, #ff5151);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.8s ease;
     font-size: 20px;
     -moz-transform: translateX(150%);
     -webkit-transform: translateX(105%);
     transform: translateX(150%);
     transform: translate(-300%);
-    color: rgb(6, 185, 53);
+   
+    -webkit-background-clip: text;
+  
     -moz-animation: my-animation 35s linear infinite;
     -webkit-animation: my-animation 45s linear infinite;
-    animation: my-animation 19s linear infinite;
+    animation: animation bounce 19s linear infinite;
     
   }
  
@@ -99,12 +109,14 @@ font-family: 'Wallpoet', cursive;
   @keyframes my-animation {
     
     from{
+
       -moz-transform: translateX(200%);
       -webkit-transform: translateX(200%);
       transform: translateX(200%);
       ;
     }
     to{
+ 
       -moz-transform: translateX(-100%);
       -webkit-transform: translateX(-100%);
       transform: translateX(-100%);
@@ -112,7 +124,14 @@ font-family: 'Wallpoet', cursive;
     }
 
 }
-  
+.container {
+    display: flex;
+    ...
+    gap: 10px;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
+  }
   
 .one{margin-left: 10px;
     font-size: 130%;
@@ -125,3 +144,31 @@ font-family: 'Wallpoet', cursive;
     text-decoration: none;
     color:black;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 120px;
+    margin:10px;
+    overflow: fixed;
+  
+  }
+
+  
+  .flex-container > div {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    width: 355px;
+    height: 155px;
+    margin: 8px;
+    padding: 10px;
+    font-size: 40px;  
+    background-color:rgb(191, 255, 0); 
+    border: 1pc;
+    justify-content: center;
+  }
+  
+  
